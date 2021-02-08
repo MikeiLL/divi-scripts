@@ -8,7 +8,7 @@
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/elegantthemes/create-divi-extension/issues"
+    "url": "https://github.com/MikeiLL/divi-scripts/issues"
   },
   "files": [
     "bin",
