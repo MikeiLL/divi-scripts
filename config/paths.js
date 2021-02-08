@@ -13,8 +13,7 @@ const path = require('path');
 const fs = require('fs');
 const url = require('url');
 const findMonorepo = require('divi-dev-utils/workspaceUtils').findMonorepo;
-console.log("path");
-console.log(path);
+
 // Make sure any symlinks in the project folder are resolved:
 // https://github.com/facebook/create-react-app/issues/637
 const appDirectory = fs.realpathSync(process.cwd());
@@ -64,8 +63,6 @@ module.exports = {
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
 };
-console.log("module.exports");
-console.log(module.exports);
 
 let checkForMonorepo = true;
 
@@ -92,8 +89,6 @@ module.exports = {
   ownPath: resolveOwn('.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
 };
-console.log("module.exports");
-console.log(module.exports);
 
 // detect if template should be used, ie. when cwd is divi-scripts itself
 const useTemplate =
